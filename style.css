@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
-  :root {
-    --backgrond: #000;
-    --text-color: #FFF;
-    --button: #8257E5;
-    --border: #29292E;
-    --border-menu-mobile: #A8A8B3;
-    --text-color-menu-mobile: #E1E1E6;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+:root {
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-
 
 body {
   height: 100vh;
@@ -28,7 +27,7 @@ body {
   height: 100%;
 }
 
-img{
+img {
   width: 43px;
   height: 50px;
 }
@@ -76,15 +75,14 @@ ul {
   letter-spacing: 2px;
 }
 
-li>a {
+li > a {
   text-decoration: none;
   transition: 1s;
-
 }
 
-li>a:hover{
+li > a:hover {
   transition: 1s;
-  color: #A8A8B3;
+  color: #a8a8b3;
   border-bottom: 1px solid white;
   border-radius: 5px;
   padding-bottom: 2px;
@@ -93,7 +91,7 @@ li>a:hover{
 .pegar {
   background-color: transparent;
   border-style: none;
-  border: 2px solid #8257E5;
+  border: 2px solid #8257e5;
   padding: 11px 38px;
   border-radius: 6px;
 
@@ -102,12 +100,11 @@ li>a:hover{
   transition: background-color 1s;
 }
 
-.pegar:hover{
+.pegar:hover {
   transition: 1s;
   background-color: #936bf0;
   border: 0;
   padding: 11px 38px;
-
 }
 
 main {
@@ -117,6 +114,7 @@ main {
   align-items: center;
   margin-top: 50px;
   flex: 1;
+  position: relative;
 }
 
 .title {
@@ -142,16 +140,31 @@ h1 {
   }
   50% {
     color: #000;
-    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+      -1px 1px 0 var(--button), 1px 1px 0 var(--button);
   }
   100% {
     color: white;
     text-shadow: none;
-    
   }
 }
 
-.rocket-coffee{
+@keyframes rocket-flying {
+  0% {
+    top: 220px;
+  }
+  50% {
+    top: 200px;
+  }
+  100% {
+    top: 220px;
+  }
+}
+
+.rocket-coffee {
   width: 798px;
   height: 506px;
+  position: absolute;
+  top: 220px;
+  animation: rocket-flying 2s 1s linear infinite;
 }
