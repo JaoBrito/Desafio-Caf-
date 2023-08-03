@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+  :root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+}
+
+
+body {
+  height: 100vh;
+  background: url(./assets/Group7.png) no-repeat center/cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+img{
+  width: 43px;
+  height: 50px;
+}
+
+.logo {
+  width: 43px;
+  height: 50px;
+}
+
+.logo:hover {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  transition: 1s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.blur1 {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  left: 0;
+  bottom: 0;
+}
+.blur2 {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  right: 0;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  font-weight: regular;
+  font-size: 14px medium;
+  letter-spacing: 2px;
+}
+
+li>a {
+  text-decoration: none;
+  transition: 1s;
+
+}
+
+li>a:hover{
+  transition: 1s;
+  color: #A8A8B3;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  padding-bottom: 2px;
+}
+
+.pegar {
+  background-color: transparent;
+  border-style: none;
+  border: 2px solid #8257E5;
+  padding: 11px 38px;
+  border-radius: 6px;
+
+  font-weight: bolder;
+  font-size: 11px;
+  transition: background-color 1s;
+}
+
+.pegar:hover{
+  transition: 1s;
+  background-color: #936bf0;
+  border: 0;
+  padding: 11px 38px;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  flex: 1;
+}
+
+.title {
+  user-select: none;
+  width: auto;
+  height: 204px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.stroked-title {
+  color: black;
+  animation: title-color 6s infinite;
+}
+
+@keyframes title-color {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  50% {
+    color: #000;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  }
+  100% {
+    color: white;
+    text-shadow: none;
+    
+  }
+}
+
+.rocket-coffee{
+  width: 798px;
+  height: 506px;
+}
