@@ -33,37 +33,24 @@ img {
 }
 
 .logo {
+  position: absolute;
+  left: 70px;
   width: 43px;
   height: 50px;
 }
 
 .logo:hover {
-  position: relative;
   width: 55px;
   height: 55px;
   transition: 1s;
 }
 
 nav {
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-.blur1 {
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  left: 0;
-  bottom: 0;
-}
-.blur2 {
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  right: 0;
-  top: 0;
 }
 
 ul {
@@ -89,6 +76,8 @@ li > a:hover {
 }
 
 .pegar {
+  position: absolute;
+  right: 60px;
   background-color: transparent;
   border-style: none;
   border: 2px solid #8257e5;
